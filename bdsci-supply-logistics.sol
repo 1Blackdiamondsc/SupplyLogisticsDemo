@@ -1,3 +1,164 @@
+pragma solidity ^0.5.10; 
+
+contract Application { 
+
+    constructor() public {}
+
+
+    function Buyer ( 
+        string memory name,
+        address account,
+        string memory _bundleHash,
+        string memory __Buyer,
+        string memory __SellerSupplier
+    )
+    public {
+    } 
+
+    function Broker ( 
+        string memory name,
+        address account,
+        string memory _bundleHash,
+        string memory __Broker,
+        string memory __BDSCIBank
+    )
+    public {
+    } 
+
+    function Carrier ( 
+        string memory name,
+        address account,
+        string memory _bundleHash,
+        string memory __Carrier,
+        string memory __Broker
+    )
+    public {
+    } 
+
+    function Product ( 
+        string memory description,
+        uint64 serialnumber,
+        string memory category,
+        string memory _bundleHash,
+        string memory IoTDeviceTemp,
+        string memory IoTDeviceVibration,
+        string memory __Product
+    )
+    public {
+    } 
+
+    function Shipper ( 
+        string memory name,
+        address account,
+        string memory _bundleHash,
+        string memory __Shipper,
+        string memory __Carrier,
+        string memory __LoadBoard
+    )
+    public {
+    } 
+
+    function BDSCIBank ( 
+        string memory name,
+        address account,
+        string memory _bundleHash,
+        string memory __BDSCIBank
+    )
+    public {
+    } 
+
+    function LoadBoard ( 
+        uint64 datetime,
+        uint64 order,
+        string memory _bundleHash,
+        string memory __LoadBoard
+    )
+    public {
+    } 
+
+    function BDSCI1Auto ( 
+        string memory __BDSCI1Auto,
+        string memory __Product,
+        string memory __Carrier
+    )
+    public {
+    } 
+
+    function SellerSupplier ( 
+        string memory name,
+        address account,
+        string memory _bundleHash,
+        string memory __SellerSupplier,
+        string memory __Product,
+        string memory __Shipper
+    )
+    public {
+    } 
+
+    function ASN ( 
+        uint64 datetime,
+        string memory EDI856,
+        string memory _bundleHash,
+        string memory __SellerSupplier
+    )
+    public {
+    } 
+
+    function Sell ( 
+        string memory __BDSCI1Auto
+    )
+    public {
+    } 
+
+    function Report ( 
+        string memory __BDSCI1Auto
+    )
+    public {
+    } 
+
+    function Invoice ( 
+        uint64 datetime,
+        string memory EDI810,
+        string memory _bundleHash,
+        string memory __SellerSupplier
+    )
+    public {
+    } 
+
+    function Payment ( 
+        uint64 datetime,
+        string memory EDI820,
+        string memory _bundleHash,
+        string memory __Buyer,
+        string memory __BDSCIBank
+    )
+    public {
+    } 
+
+    function BDSCILockbox ( 
+        uint64 datetime,
+        string memory EDI823,
+        string memory _bundleHash,
+        string memory __BDSCIBank
+    )
+    public {
+    } 
+
+    function PurchaseOrder ( 
+        uint64 datetime,
+        string memory EDI850,
+        string memory _bundleHash,
+        string memory __Buyer
+    )
+    public {
+    } 
+
+    function BDCSCI1UsedForPayment ( 
+        string memory __BDSCIBank
+    )
+    public {
+    }
+}
 pragma solidity ^0.4.24;
 
 contract Application {
@@ -129,165 +290,3 @@ contract Application {
    public {}
 }
 
-
-pragma solidity ^0.5.10; 
-
-contract Application { 
-
-    constructor() public {}
-
-
-    function Buyer ( 
-        string memory name,
-        address account,
-        string memory _bundleHash,
-        string memory __Buyer,
-        string memory __SellerSupplier
-    )
-    public {
-    } 
-
-    function Broker ( 
-        string memory name,
-        address account,
-        string memory _bundleHash,
-        string memory __Broker,
-        string memory __BDSCIBank
-    )
-    public {
-    } 
-
-    function Carrier ( 
-        string memory name,
-        address account,
-        string memory _bundleHash,
-        string memory __Carrier,
-        string memory __Broker
-    )
-    public {
-    } 
-
-    function Product ( 
-        string memory description,
-        uint64 serialnumber,
-        string memory category,
-        string memory _bundleHash,
-        string memory IoTDeviceTemp,
-        string memory IoTDeviceVibration,
-        string memory __Product
-    )
-    public {
-    } 
-
-    function Shipper ( 
-        string memory name,
-        address account,
-        string memory _bundleHash,
-        string memory __Shipper,
-        string memory __Carrier,
-        string memory __LoadBoard
-    )
-    public {
-    } 
-
-    function BDSCIBank ( 
-        string memory name,
-        address account,
-        string memory _bundleHash,
-        string memory __BDSCIBank
-    )
-    public {
-    } 
-
-    function LoadBoard ( 
-        uint64 datetime,
-        uint64 order,
-        string memory _bundleHash,
-        string memory __LoadBoard
-    )
-    public {
-    } 
-
-    function BDSCI1Auto ( 
-        string memory __BDSCI1Auto,
-        string memory __Product,
-        string memory __Carrier
-    )
-    public {
-    } 
-
-    function SellerSupplier ( 
-        string memory name,
-        address account,
-        string memory _bundleHash,
-        string memory __SellerSupplier,
-        string memory __Product,
-        string memory __Shipper
-    )
-    public {
-    } 
-
-    function ASN ( 
-        uint64 datetime,
-        string memory EDI856,
-        string memory _bundleHash,
-        string memory __SellerSupplier
-    )
-    public {
-    } 
-
-    function Sell ( 
-        string memory __BDSCI1Auto
-    )
-    public {
-    } 
-
-    function Report ( 
-        string memory __BDSCI1Auto
-    )
-    public {
-    } 
-
-    function Invoice ( 
-        uint64 datetime,
-        string memory EDI810,
-        string memory _bundleHash,
-        string memory __SellerSupplier
-    )
-    public {
-    } 
-
-    function Payment ( 
-        uint64 datetime,
-        string memory EDI820,
-        string memory _bundleHash,
-        string memory __Buyer,
-        string memory __BDSCIBank
-    )
-    public {
-    } 
-
-    function BDSCILockbox ( 
-        uint64 datetime,
-        string memory EDI823,
-        string memory _bundleHash,
-        string memory __BDSCIBank
-    )
-    public {
-    } 
-
-    function PurchaseOrder ( 
-        uint64 datetime,
-        string memory EDI850,
-        string memory _bundleHash,
-        string memory __Buyer
-    )
-    public {
-    } 
-
-    function BDCSCI1UsedForPayment ( 
-        string memory __BDSCIBank
-    )
-    public {
-    }
-}
